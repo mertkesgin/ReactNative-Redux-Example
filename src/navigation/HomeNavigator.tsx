@@ -1,6 +1,7 @@
 import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
+import { COLORS } from "../constants";
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,7 @@ const HomeNavigator = () => {
                 headerBackTitleVisible:false,
                 headerTitleAlign:'center',
                 headerStyle: {
-                    backgroundColor: '#151c25'
+                    backgroundColor: COLORS.colorPrimary
                 },}}/>
                 
         </Stack.Navigator>
